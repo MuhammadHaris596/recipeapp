@@ -1,0 +1,4745 @@
+@font-face {
+  font-family: bebas;
+  src: url(./assets/fonts/BebasNeue-Regular.ttf);
+}
+@font-face {
+  font-family: pop-b;
+  src: url(./assets/fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: pop-m;
+  src: url(./assets/fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: pop-l;
+  src: url(./assets/fonts/Poppins-Light.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: pop-m;
+  color: black;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.webWrap {
+  width: 1920px;
+  height: -moz-max-content;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow: hidden;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0px;
+}
+nav .my_container {
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+  height: 50px;
+  align-items: center;
+}
+nav .my_container .links {
+  gap: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  text-decoration: none;
+  text-align: center;
+  list-style: none;
+  list-style-position: outside;
+}
+nav .my_container .links li {
+  list-style: none;
+  transition: all 0.2s ease-in-out;
+}
+nav .my_container .links li a {
+  text-decoration: none;
+  font-family: pop-l;
+  font-size: 15px;
+  padding: 2px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+nav .my_container .links li:hover {
+  border-bottom: 1px solid #acaba9;
+}
+nav .my_container .logo_box h1 {
+  font-size: 1.5rem;
+  font-family: pop-b;
+}
+nav .my_container .serch_box {
+  padding: 5px 0px;
+  gap: 1rem;
+}
+nav .my_container .serch_box .icon_box {
+  width: -moz-max-content;
+  width: max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  position: relative;
+}
+nav .my_container .serch_box .icon_box .login_iconBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+nav .my_container .serch_box .icon_box .login_iconBox .user-name {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+nav .my_container .serch_box .icon_box .login_iconBox .menue-btn {
+  border: none;
+}
+nav .my_container .serch_box .icon_box .login_iconBox .menue-btn .fa-bars, nav .my_container .serch_box .icon_box .login_iconBox .menue-btn .fa-solid {
+  font-size: 21px;
+}
+nav .my_container .serch_box .icon_box .login_iconBox .btn-bars {
+  display: none;
+}
+nav .my_container .serch_box .icon_box .login_iconBox .togle-bar {
+  width: 170px;
+  background-color: rgb(255, 255, 255);
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 25px;
+  right: 0;
+  border-radius: 5px;
+  gap: 0px;
+  align-items: flex-start;
+  text-align: left;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+nav .my_container .serch_box .icon_box .login_iconBox .togle-bar li {
+  width: 100%;
+  display: flex;
+  padding: 10px 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.247);
+  justify-content: space-between;
+}
+nav .my_container .serch_box .icon_box .login_iconBox .togle-bar li .closs-btn {
+  border: none;
+  padding: 0px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 13px;
+  right: 5px;
+}
+nav .my_container .serch_box .icon_box .login_iconBox .togle-bar li .closs-btn img {
+  height: 100%;
+  width: 100%;
+}
+nav .my_container .serch_box .icon_box .login_iconBox .togle-bar li:hover {
+  border-bottom: 1px solid #acaba9;
+}
+nav .my-menue {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65%;
+  display: flex;
+  padding: 5px 0px;
+}
+nav .my-menue .links {
+  gap: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  text-decoration: none;
+  text-align: center;
+  list-style: none;
+  list-style-position: outside;
+}
+nav .my-menue .links li {
+  list-style: none;
+}
+nav .my-menue .links li a {
+  text-decoration: none;
+  font-family: pop-l;
+  font-size: 15px;
+  padding: 2px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+header {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.my-hero {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+}
+.my-hero .hero-container {
+  width: 100%;
+  overflow: hidden;
+}
+.my-hero .hero-container .img_wrap {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.192), rgba(0, 0, 0, 0.692)), url(./assets/img/chicken-larb-plate-with-dried-chilies-tomatoes-spring-onions-lettuce.jpg);
+}
+
+/* recipe home display section */
+.foods-recipes {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 2% 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.foods-recipes .food-container {
+  width: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.foods-recipes .food-container .mycard-Wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+}
+.foods-recipes .food-container .mycard-Wrap .card {
+  display: flex;
+  gap: 1rem;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 1%;
+  flex-wrap: wrap;
+}
+.foods-recipes .food-container .mycard-Wrap .card .profile-row {
+  gap: 1rem;
+  align-items: center;
+}
+.foods-recipes .food-container .mycard-Wrap .card .profile-row .right-timeBox span {
+  font-size: 16px;
+  font-family: pop-l;
+  padding: 4px;
+}
+.foods-recipes .food-container .mycard-Wrap .card .profile-row .left-imgSide {
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+}
+.foods-recipes .food-container .mycard-Wrap .card .profile-row .prof-imgBox {
+  height: 50px;
+  width: 50px;
+  background: black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.foods-recipes .food-container .mycard-Wrap .card .profile-row .prof-imgBox img {
+  height: 100%;
+  width: 100%;
+}
+.foods-recipes .food-container .mycard-Wrap .card .profile-row .text-content {
+  height: -moz-max-content;
+  height: max-content;
+  padding: 0px;
+}
+.foods-recipes .food-container .mycard-Wrap .card .profile-row .text-content span {
+  font-size: 13px;
+  font-family: pop-l;
+}
+.foods-recipes .food-container .mycard-Wrap .card .profile-row .text-content h6 {
+  font-family: pop-m;
+  font-size: 20px;
+}
+.foods-recipes .food-container .mycard-Wrap .card .card-contentWrap {
+  gap: 1rem;
+}
+.foods-recipes .food-container .mycard-Wrap .card .img-box {
+  width: 250px;
+  height: 250px;
+  background-image: url(./assets/img/chicken-larb-plate-with-dried-chilies-tomatoes-spring-onions-lettuce\ \(1\).jpg);
+  background-size: contain;
+}
+.foods-recipes .food-container .mycard-Wrap .card .img-box img {
+  height: 100%;
+  width: 100%;
+}
+.foods-recipes .food-container .mycard-Wrap .card .texs {
+  width: 240px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: left;
+  gap: 10px;
+}
+.foods-recipes .food-container .mycard-Wrap .card .texs h4 {
+  font-size: 22px;
+}
+.foods-recipes .food-container .mycard-Wrap .card .texs p {
+  width: 95%;
+  height: 120px;
+  font-size: 13px;
+  font-family: pop-l;
+  overflow: hidden;
+}
+.foods-recipes .food-container .mycard-Wrap .card .texs .btn-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+}
+.foods-recipes .food-container .mycard-Wrap .card .texs .btn-row .btn-pears {
+  font-size: 27px;
+}
+.foods-recipes .food-container .mycard-Wrap .card .texs .btn-row .rec-add .recAdd-btn {
+  border: 1px solid #2c2c2c;
+  color: #2c2c2c;
+  background: white;
+  transition: all 0.2s ease-out;
+  width: 100%;
+  padding: 2px 5px;
+}
+.foods-recipes .food-container .mycard-Wrap .card .texs .btn-row .rec-add .recAdd-btn a {
+  text-decoration: none;
+  font-size: 12px;
+}
+.foods-recipes .food-container .mycard-Wrap .card .texs .btn-row .btn-pears .save_btn {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0px 0px;
+}
+.foods-recipes .food-container .mycard-Wrap .card .texs .btn-row .btn-pears .save_btn .save-fillup {
+  display: none;
+}
+.foods-recipes .food-container .mycard-Wrap .card .texs .btn-row .btn-pears .save_btn .fa-regular {
+  border: none;
+  outline: none;
+  background: none;
+}
+.foods-recipes .food-container .mycard-Wrap .card .texs .view-recipe {
+  padding: 3px 5px;
+  border: 1px solid #2c2c2c;
+  color: #2c2c2c;
+  background: white;
+  transition: all 0.2s ease-out;
+}
+.foods-recipes .food-container .mycard-Wrap .card .texs .view-recipe a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #2c2c2c;
+}
+.foods-recipes .food-container .mycard-Wrap .card .texs .view-recipe:hover {
+  background: #2c2c2c;
+  border: none;
+}
+.foods-recipes .food-container .mycard-Wrap .card .texs .view-recipe:hover a {
+  color: white;
+}
+.foods-recipes .food-container .mycard-Wrap .card:hover {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+}
+
+/* recipe share dash board */
+.dash-board {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.dash-board nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0px;
+  border: 1px solid rgba(0, 0, 0, 0.247);
+}
+.dash-board nav .my_container {
+  display: grid;
+  grid-template-columns: 20% auto 20%;
+  width: 97%;
+  height: 50px;
+  align-items: center;
+  gap: 15rem;
+}
+.dash-board nav .my_container .logo_box h1 {
+  font-size: 2rem;
+  font-family: pop-b;
+}
+.dash-board nav .my_container .serch_box {
+  padding: 5px 0px;
+  width: 100%;
+  gap: 1rem;
+}
+.dash-board nav .my_container .serch_box .serch {
+  border: 1px solid rgba(0, 0, 0, 0.267);
+  border-radius: 4px;
+  padding: 0px 0px 0px 10px;
+  display: flex;
+  align-items: center;
+  height: -moz-max-content;
+  height: max-content;
+  width: 100%;
+}
+.dash-board nav .my_container .serch_box .serch input {
+  height: 35px;
+  width: 100%;
+  background: none;
+  border: none;
+}
+.dash-board nav .my_container .serch_box .serch :focus {
+  border: none;
+  outline: none;
+}
+.dash-board nav .my_container .serch_box .serch .serch-btn {
+  height: 35px;
+  width: 35px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border: none;
+}
+.dash-board nav .my_container .serch_box .serch .serch-btn .fa-magnifying-glass {
+  color: #121212;
+}
+.dash-board nav .my_container .serch_box .serch .serch-btn:hover {
+  background: #2c2c2c;
+  color: white;
+}
+.dash-board nav .my_container .serch_box .serch .serch-btn:hover .fa-solid {
+  color: white;
+}
+.dash-board .dash-contentWrap {
+  height: 100%;
+}
+.dash-board .dash-contentWrap .hero-sec {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.dash-board .dash-contentWrap .hero-sec .left-bar {
+  width: 20%;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dash-board .dash-contentWrap .hero-sec .left-bar .left-content {
+  border: 1px solid rgba(0, 0, 0, 0.247);
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+.dash-board .dash-contentWrap .hero-sec .left-bar .left-content .inner-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.dash-board .dash-contentWrap .hero-sec .left-bar .left-content .inner-row .nave-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+}
+.dash-board .dash-contentWrap .hero-sec .left-bar .left-content .inner-row .nave-list li {
+  width: 100%;
+  display: flex;
+  list-style-position: outside;
+  list-style: none;
+  gap: 1.5rem;
+  align-items: center;
+  color: #2c2c2c;
+  padding: 5px 10px;
+}
+.dash-board .dash-contentWrap .hero-sec .left-bar .left-content .inner-row .nave-list li .save-icon {
+  text-decoration: none;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dash-board .dash-contentWrap .hero-sec .left-bar .left-content .inner-row .nave-list li .save-icon .fa-bookmark, .dash-board .dash-contentWrap .hero-sec .left-bar .left-content .inner-row .nave-list li .save-icon .hover {
+  color: #75706f;
+}
+.dash-board .dash-contentWrap .hero-sec .left-bar .left-content .inner-row .nave-list li .hover {
+  color: #75706f;
+}
+.dash-board .dash-contentWrap .hero-sec .left-bar .left-content .inner-row .nave-list li .hover:hover {
+  color: black;
+}
+.dash-board .dash-contentWrap .hero-sec .left-bar .left-content .inner-row .nave-list li:hover .hover, .dash-board .dash-contentWrap .hero-sec .left-bar .left-content .inner-row .nave-list li:hover .fa-bookmark, .dash-board .dash-contentWrap .hero-sec .left-bar .left-content .inner-row .nave-list li:hover .save-text, .dash-board .dash-contentWrap .hero-sec .left-bar .left-content .inner-row .nave-list li:hover .rec-nmbr {
+  color: black;
+}
+.dash-board .dash-contentWrap .hero-sec .left-bar .left-content .inner-row .save-box {
+  display: flex;
+  flex-direction: column;
+}
+.dash-board .dash-contentWrap .hero-sec .left-bar .left-content .inner-row .save-box .save-text {
+  font-family: pop-m;
+  font-size: 15px;
+  color: #75706f;
+}
+.dash-board .dash-contentWrap .hero-sec .left-bar .left-content .inner-row .save-box .rec-nmbr {
+  font-family: pop-l;
+  font-size: 14px;
+  color: #75706f;
+}
+.dash-board .dash-contentWrap .hero-sec .center-box {
+  width: auto;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 1%;
+}
+.dash-board .dash-contentWrap .hero-sec .center-box .content {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+.dash-board .dash-contentWrap .hero-sec .center-box .content .centre-Wrap .ingred-row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 3px;
+}
+.dash-board .dash-contentWrap .hero-sec .center-box .content .centre-Wrap .ingred-row .content-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.dash-board .dash-contentWrap .hero-sec .center-box .content .centre-Wrap .ingred-row .content-wrap .row-title {
+  padding: 5px 0px;
+}
+.dash-board .dash-contentWrap .hero-sec .center-box .content .centre-Wrap .ingred-row .content-wrap .row-title h3 {
+  color: #75706f;
+}
+.dash-board .dash-contentWrap .hero-sec .center-box .content .centre-Wrap .ingred-row .content-wrap .ingredient-listBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.dash-board .dash-contentWrap .hero-sec .center-box .content .centre-Wrap .ingred-row .content-wrap .ingredient-listBox .list {
+  padding: 5px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+}
+.dash-board .dash-contentWrap .hero-sec .center-box .content .centre-Wrap .ingred-row .content-wrap .ingredient-listBox .list .delete-btn {
+  padding: 3px;
+  border: none;
+  outline: none;
+}
+.dash-board .dash-contentWrap .hero-sec .center-box .content .centre-Wrap .ingred-row .content-wrap .ingredient-listBox .list input {
+  width: 100%;
+  padding: 10PX 10PX;
+  font-size: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.219);
+}
+.dash-board .dash-contentWrap .hero-sec .center-box .content .centre-Wrap .ingred-row .content-wrap .ingredient-listBox .list input:focus {
+  border: none;
+  outline: none;
+}
+.dash-board .dash-contentWrap .hero-sec .center-box .content .centre-Wrap .ingred-row .content-wrap .ingredient-listBox .list .fa-list {
+  color: #75706f;
+  font-size: 20px;
+}
+.dash-board .dash-contentWrap .hero-sec .center-box .content .centre-Wrap .ingred-row .content-wrap .ingr-addBtn button {
+  padding: 3px 10px;
+  border-radius: 4px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.dash-board .dash-contentWrap .hero-sec .center-box .content .centre-Wrap .inner-row {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.dash-board .dash-contentWrap .hero-sec .center-box .content .centre-Wrap .inner-row .img-box {
+  height: 300px;
+  width: 300px;
+  background-color: black;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.247);
+}
+.dash-board .dash-contentWrap .hero-sec .center-box .content .centre-Wrap .inner-row .img-box img {
+  height: 100%;
+  width: 100%;
+}
+.dash-board .dash-contentWrap .hero-sec .center-box .content .centre-Wrap .inner-row .text-box {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.dash-board .dash-contentWrap .hero-sec .center-box .content .centre-Wrap .inner-row .text-box .btn-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.dash-board .dash-contentWrap .hero-sec .center-box .content .centre-Wrap .inner-row .text-box .btn-box button {
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background: #2c2c2c;
+  transition: all 0.2s ease-out;
+}
+.dash-board .dash-contentWrap .hero-sec .center-box .content .centre-Wrap .inner-row .text-box .btn-box button:hover {
+  background: #2c2c2c;
+  border: none;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.dash-board .dash-contentWrap .hero-sec .center-box .content .centre-Wrap .inner-row .text-box .recipe-title {
+  border: 1px solid rgba(0, 0, 0, 0.212);
+  border-radius: 5px;
+}
+.dash-board .dash-contentWrap .hero-sec .center-box .content .centre-Wrap .inner-row .text-box .recipe-title input {
+  height: 50px;
+  width: 550px;
+  padding: 0px 0px 0px 10px;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+}
+.dash-board .dash-contentWrap .hero-sec .center-box .content .centre-Wrap .inner-row .text-box .discrip-box {
+  width: 550px;
+  height: 100px;
+  overflow: hidden;
+}
+.dash-board .dash-contentWrap .hero-sec .center-box .content .centre-Wrap .inner-row .text-box .discrip-box textarea {
+  height: 100%;
+  width: 100%;
+  font-size: 15px;
+  color: #75706f;
+  border: 1px solid rgba(0, 0, 0, 0.212);
+}
+.dash-board .dash-contentWrap .hero-sec .center-box .content .dashboard-saveSec {
+  display: none;
+}
+.dash-board .dash-contentWrap .hero-sec .center-box .content .user_recipies {
+  display: none;
+}
+.dash-board .dash-contentWrap .hero-sec .center-box .content .mycard-Wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+}
+.dash-board .dash-contentWrap .hero-sec .center-box .content .mycard-Wrap .card {
+  display: flex;
+  gap: 1rem;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 1%;
+  flex-wrap: wrap;
+}
+.dash-board .dash-contentWrap .hero-sec .center-box .content .mycard-Wrap .card .profile-row {
+  gap: 1rem;
+  align-items: center;
+}
+.dash-board .dash-contentWrap .hero-sec .center-box .content .mycard-Wrap .card .profile-row .right-timeBox span {
+  font-size: 16px;
+  font-family: pop-l;
+  padding: 4px;
+}
+.dash-board .dash-contentWrap .hero-sec .center-box .content .mycard-Wrap .card .profile-row .left-imgSide {
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+}
+.dash-board .dash-contentWrap .hero-sec .center-box .content .mycard-Wrap .card .profile-row .prof-imgBox {
+  height: 50px;
+  width: 50px;
+  background: black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.dash-board .dash-contentWrap .hero-sec .center-box .content .mycard-Wrap .card .profile-row .prof-imgBox img {
+  height: 100%;
+  width: 100%;
+}
+.dash-board .dash-contentWrap .hero-sec .center-box .content .mycard-Wrap .card .profile-row .text-content {
+  height: -moz-max-content;
+  height: max-content;
+  padding: 0px;
+}
+.dash-board .dash-contentWrap .hero-sec .center-box .content .mycard-Wrap .card .profile-row .text-content span {
+  font-size: 13px;
+  font-family: pop-l;
+}
+.dash-board .dash-contentWrap .hero-sec .center-box .content .mycard-Wrap .card .profile-row .text-content h6 {
+  font-family: pop-m;
+  font-size: 20px;
+}
+.dash-board .dash-contentWrap .hero-sec .center-box .content .mycard-Wrap .card .card-contentWrap {
+  width: 100%;
+  gap: 1rem;
+}
+.dash-board .dash-contentWrap .hero-sec .center-box .content .mycard-Wrap .card .img-box {
+  width: 250px;
+  height: 250px;
+  background-image: url(./assets/img/chicken-larb-plate-with-dried-chilies-tomatoes-spring-onions-lettuce\ \(1\).jpg);
+  background-size: contain;
+}
+.dash-board .dash-contentWrap .hero-sec .center-box .content .mycard-Wrap .card .img-box img {
+  height: 100%;
+  width: 100%;
+}
+.dash-board .dash-contentWrap .hero-sec .center-box .content .mycard-Wrap .card .texs {
+  width: 240px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: left;
+  gap: 10px;
+}
+.dash-board .dash-contentWrap .hero-sec .center-box .content .mycard-Wrap .card .texs h4 {
+  font-size: 22px;
+}
+.dash-board .dash-contentWrap .hero-sec .center-box .content .mycard-Wrap .card .texs p {
+  width: 95%;
+  height: 120px;
+  font-size: 13px;
+  font-family: pop-l;
+  overflow: hidden;
+}
+.dash-board .dash-contentWrap .hero-sec .center-box .content .mycard-Wrap .card .texs .btn-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+}
+.dash-board .dash-contentWrap .hero-sec .center-box .content .mycard-Wrap .card .texs .btn-row .btn-pears {
+  font-size: 27px;
+}
+.dash-board .dash-contentWrap .hero-sec .center-box .content .mycard-Wrap .card .texs .btn-row .rec-add .recAdd-btn {
+  border: 1px solid #2c2c2c;
+  color: #2c2c2c;
+  background: white;
+  transition: all 0.2s ease-out;
+  width: 100%;
+  padding: 2px 5px;
+}
+.dash-board .dash-contentWrap .hero-sec .center-box .content .mycard-Wrap .card .texs .btn-row .rec-add .recAdd-btn a {
+  text-decoration: none;
+  font-size: 12px;
+}
+.dash-board .dash-contentWrap .hero-sec .center-box .content .mycard-Wrap .card .texs .view-recipe {
+  padding: 3px 5px;
+  border: 1px solid #2c2c2c;
+  color: #2c2c2c;
+  background: white;
+  transition: all 0.2s ease-out;
+}
+.dash-board .dash-contentWrap .hero-sec .center-box .content .mycard-Wrap .card .texs .view-recipe a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #2c2c2c;
+}
+.dash-board .dash-contentWrap .hero-sec .center-box .content .mycard-Wrap .card .texs .view-recipe:hover {
+  background: #2c2c2c;
+  border: none;
+}
+.dash-board .dash-contentWrap .hero-sec .center-box .content .mycard-Wrap .card .texs .view-recipe:hover a {
+  color: white;
+}
+.dash-board .dash-contentWrap .hero-sec .center-box .content .mycard-Wrap .card:hover {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+}
+
+/* recipe save section */
+.save-rec {
+  height: 100vh;
+  width: 0px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: white;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  transition: all 0.2s ease-in-out;
+}
+.save-rec .sid-bar {
+  position: relative;
+  width: 300px;
+  min-width: 380px;
+  height: -moz-max-content;
+  height: max-content;
+  display: flex;
+  justify-content: flex-end;
+}
+.save-rec .sid-bar .content-Wrap {
+  width: 100%;
+  height: 100%;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.save-rec .sid-bar .content-Wrap .inner-row .closs-btn {
+  border: none;
+  padding: 0px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.save-rec .sid-bar .content-Wrap .inner-row .closs-btn img {
+  height: 100%;
+  width: 100%;
+}
+.save-rec .sid-bar .content-Wrap .inner-row .save-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+.save-rec .sid-bar .content-Wrap .inner-row .save-box .img-box {
+  height: 110px;
+  width: 110px;
+  overflow: hidden;
+}
+.save-rec .sid-bar .content-Wrap .inner-row .save-box .img-box img {
+  height: 100%;
+  width: 100%;
+}
+.save-rec .sid-bar .content-Wrap .inner-row .save-box .text-box {
+  height: 110px;
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  overflow: hidden;
+}
+.save-rec .sid-bar .content-Wrap .inner-row .save-box .text-box .user-detail {
+  width: 100%;
+  gap: 10px;
+  align-items: center;
+  display: flex;
+}
+.save-rec .sid-bar .content-Wrap .inner-row .save-box .text-box .user-detail .user-img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.save-rec .sid-bar .content-Wrap .inner-row .save-box .text-box .user-detail .user-img img {
+  height: 100%;
+  width: 100%;
+}
+.save-rec .sid-bar .content-Wrap .inner-row .save-box .text-box .user-detail span {
+  font-size: 12px;
+  font-family: pop-m;
+  text-align: left;
+}
+.save-rec .sid-bar .content-Wrap .inner-row .save-box .text-box span {
+  font-size: 16px;
+  font-family: pop-b;
+  text-align: left;
+}
+.save-rec .sid-bar .content-Wrap .inner-row .save-box .text-box p {
+  font-size: 13px;
+  font-family: pop-l;
+}
+.save-rec .sid-bar .content-Wrap .inner-row .save-box .icon-box {
+  height: 110px;
+  gap: 10px;
+  top: 0;
+  right: 0;
+}
+.save-rec .sid-bar .content-Wrap .inner-row .save-box .icon-box button {
+  padding: 3px 20px;
+  border: none;
+  background: none;
+  border-radius: 4px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  transition: all 0.1s ease-out;
+}
+.save-rec .sid-bar .content-Wrap .inner-row .save-box .icon-box button:hover {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.save-rec .sid-bar .content-Wrap .inner-row .save-box .icon-box img {
+  height: 20px;
+  width: 20px;
+}
+
+/* recipe view and ingri section */
+.main-recipeSect {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 2% 0px;
+  border: none;
+}
+.main-recipeSect .container {
+  width: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+.main-recipeSect .container .content {
+  padding: 2% 0px;
+  width: 820px;
+  padding: 10px;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.main-recipeSect .container .content .titlle-row {
+  width: 100%;
+}
+.main-recipeSect .container .content .titlle-row h3 {
+  font-size: 2rem;
+}
+.main-recipeSect .container .content .img-box {
+  height: 70%;
+  width: 70%;
+}
+.main-recipeSect .container .content .img-box img {
+  width: 100%;
+}
+.main-recipeSect .container .content .texts {
+  width: 70%;
+}
+.main-recipeSect .container .content .texts p {
+  font-family: pop-l;
+  font-size: 16px;
+  color: #2c2c2c;
+}
+.main-recipeSect .container .content .ing-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.main-recipeSect .container .content .ing-box .title {
+  padding: 10px 0px;
+  width: 100%;
+}
+.main-recipeSect .container .content .ing-box .title h5 {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+.main-recipeSect .container .content .ing-box .list-box ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.main-recipeSect .container .content .ing-box .list-box ul li {
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+.main-recipeSect .container .content .ing-box .list-box ul li span {
+  color: #2c2c2c;
+}
+
+/*  signup and login page in one section */
+.login-page-sec {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  text-align: center;
+  align-items: center;
+  display: flex;
+}
+.login-page-sec::hover {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+.login-page-sec .wrapper {
+  display: flex;
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 1% 0px 1% 0px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.login-page-sec .wrapper form {
+  position: relative;
+  padding: 1%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 500px;
+  min-width: 380PX;
+  height: -moz-max-content;
+  height: max-content;
+  flex-wrap: wrap;
+  background: #ffffff;
+  align-content: center;
+  border-radius: 10px;
+  gap: 5px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+  transition: all 0.3s ease-in;
+}
+.login-page-sec .wrapper form .title-row {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+.login-page-sec .wrapper form .title-row .closs-btn {
+  border: none;
+  padding: 0px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.login-page-sec .wrapper form .title-row .closs-btn img {
+  height: 100%;
+  width: 100%;
+}
+.login-page-sec .wrapper form .inpt-pwd {
+  display: block;
+  width: 100%;
+  height: 70px;
+  align-items: center;
+  text-align: center;
+}
+.login-page-sec .wrapper form .inpt-pwd .pswrd-icon {
+  color: #444;
+  position: relative;
+  font-size: 12px;
+  top: -43px;
+  right: -43%;
+  z-index: 1;
+}
+.login-page-sec .wrapper form .inp {
+  position: relative;
+  margin: 10px 0px;
+  position: relative;
+  width: 100%;
+  padding: 10px 0px 10px 10px;
+  border-radius: 5px;
+  border: 1px solid #b0b3b6;
+  font-weight: 500;
+  color: black;
+  transition: all 0.1s ease-in;
+  outline: none;
+}
+.login-page-sec .wrapper form .inp:hover {
+  cursor: pointer;
+  border: 1px solid #037ce6;
+}
+.login-page-sec .wrapper form .inp:focus-within {
+  border: 2px solid #0160b2;
+  color: black;
+}
+.login-page-sec .wrapper form .frgt {
+  color: #037ce6;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+.login-page-sec .wrapper form .Login-btn {
+  background: #0171d3;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  height: 40px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in;
+}
+.login-page-sec .wrapper form .Login-btn a {
+  text-decoration: none;
+  color: white;
+  padding: 15px 0px;
+  font-size: 14px;
+}
+.login-page-sec .wrapper form .Login-btn:hover {
+  box-shadow: #037ce6 0px 4px 10px;
+}
+.login-page-sec .wrapper form .lgn-fb {
+  margin-top: 20px;
+  text-decoration: none;
+  width: 100%;
+  background: #0160b2;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  height: 40px;
+  transition: all 0.2s ease-in;
+  position: relative;
+}
+.login-page-sec .wrapper form .lgn-fb:hover {
+  box-shadow: #0160b2 0px 4px 10px;
+}
+.login-page-sec .wrapper form .lgn-fb a {
+  text-decoration: none;
+  color: white;
+  padding: 15px 0px;
+  font-size: 14px;
+}
+.login-page-sec .wrapper form .lgn-fb .fa-facebook {
+  color: white;
+  font-size: 19px;
+  position: absolute;
+  top: 12px;
+  left: 10px;
+}
+.login-page-sec .wrapper form .lgn-gle {
+  text-decoration: none;
+  justify-content: center;
+  border: none;
+  outline: none;
+  color: white;
+  border-radius: 5px;
+  height: 40px;
+  display: flex;
+  margin-top: 20px;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  background: #444;
+  transition: all 0.2s ease-in;
+  position: relative;
+}
+.login-page-sec .wrapper form .lgn-gle:hover {
+  box-shadow: #444 0px 4px 10px;
+}
+.login-page-sec .wrapper form .lgn-gle .fa-google {
+  color: #b0b3b6;
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  font-size: 18px;
+}
+.login-page-sec .wrapper form .lgn-gle a {
+  text-decoration: none;
+  color: #b0b3b6;
+  font-weight: 600;
+  font-size: 14px;
+}
+.login-page-sec .wrapper form .Signup-txt {
+  margin-top: 13px;
+  font-size: 13px;
+  font-weight: 500;
+  color: black;
+}
+.login-page-sec .wrapper form .Signup-txt a {
+  text-decoration: none;
+  color: #037ce6;
+  font-size: 16px;
+  margin-left: 10px;
+}
+.login-page-sec .wrapper form .under-line {
+  position: relative;
+  text-align: center;
+  font-size: 13px;
+  overflow: hidden;
+  margin-top: 15px;
+  width: 300px;
+  color: #b0b3b6;
+}
+.login-page-sec .wrapper form .under-line::before {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 0.9px;
+  position: absolute;
+  top: 45%;
+  background: #b0b3b6;
+}
+.login-page-sec .wrapper form .under-line::after {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 0.9px;
+  position: absolute;
+  top: 45%;
+  right: 0px;
+  background: #b0b3b6;
+}
+
+@media screen and (max-width: 1783.98px) {
+  .webWrap {
+    width: 1783.98px;
+    height: -moz-max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .webWrap nav {
+    width: 100%;
+  }
+  .webWrap nav .my_container {
+    width: 95%;
+  }
+  .webWrap .my-hero {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+  }
+  .webWrap .my-hero .hero-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  .webWrap .my-hero .hero-container .img_wrap {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.192), rgba(0, 0, 0, 0.692)), url(./assets/img/chicken-larb-plate-with-dried-chilies-tomatoes-spring-onions-lettuce.jpg);
+  }
+  .webWrap .foods-recipes {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .webWrap .foods-recipes .food-container {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap {
+    width: 100% !important;
+    flex-wrap: wrap;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card {
+    display: flex;
+    gap: 1rem;
+    height: -moz-max-content;
+    height: max-content;
+    padding: 1%;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .profile-row {
+    gap: 1rem;
+    align-items: center;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .profile-row .right-timeBox span {
+    font-size: 16px;
+    font-family: pop-l;
+    padding: 4px;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .profile-row .left-imgSide {
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .profile-row .prof-imgBox {
+    height: 70px;
+    width: 70px;
+    background: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .profile-row .prof-imgBox img {
+    height: 100%;
+    width: 100%;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .profile-row .text-content {
+    height: -moz-max-content;
+    height: max-content;
+    padding: 0px;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .profile-row .text-content span {
+    font-size: 13px;
+    font-family: pop-l;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .profile-row .text-content h6 {
+    font-family: pop-m;
+    font-size: 20px;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .card-contentWrap {
+    gap: 1rem;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .img-box {
+    width: 250px;
+    height: 250px;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .img-box img {
+    width: 100%;
+    height: 100%;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    gap: 10px;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs h4 {
+    font-size: 22px;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs p {
+    width: 95%;
+    font-size: 13px;
+    font-family: pop-l;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs .btn-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs .btn-row .btn-pears {
+    font-size: 27px;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs .btn-row .rec-add .recAdd-btn {
+    border: 1px solid #2c2c2c;
+    color: #2c2c2c;
+    background: white;
+    transition: all 0.2s ease-out;
+    width: 100%;
+    padding: 2px 5px;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs .btn-row .rec-add .recAdd-btn a {
+    text-decoration: none;
+    font-size: 12px;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs .view-recipe {
+    padding: 3px 5px;
+    border: 1px solid #2c2c2c;
+    color: #2c2c2c;
+    background: white;
+    transition: all 0.2s ease-out;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs .view-recipe a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #2c2c2c;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs .view-recipe:hover {
+    background: #2c2c2c;
+    border: none;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs .view-recipe:hover a {
+    color: white;
+  }
+}
+@media screen and (max-width: 1440.98px) {
+  .webWrap {
+    width: 1440.98px;
+    height: -moz-max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .webWrap header {
+    width: 100% !important;
+    height: 20% !important;
+  }
+  .webWrap header nav {
+    width: 100%;
+  }
+  .webWrap header .my-hero {
+    width: 100% !important;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+    background-color: red;
+  }
+  .webWrap header .my-hero .hero-container {
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid black;
+    background-color: rgb(0, 255, 221);
+    display: flex;
+    justify-content: center;
+  }
+  .webWrap header .my-hero .hero-container .img_wrap {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.192), rgba(0, 0, 0, 0.692)), url(./assets/img/chicken-larb-plate-with-dried-chilies-tomatoes-spring-onions-lettuce.jpg);
+  }
+  .webWrap .foods-recipes {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .webWrap .foods-recipes .food-container {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap {
+    width: 100% !important;
+    flex-wrap: wrap;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card {
+    display: flex;
+    gap: 1rem;
+    height: -moz-max-content;
+    height: max-content;
+    padding: 1%;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .profile-row {
+    gap: 1rem;
+    align-items: center;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .profile-row .right-timeBox span {
+    font-size: 16px;
+    font-family: pop-l;
+    padding: 4px;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .profile-row .left-imgSide {
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .profile-row .prof-imgBox {
+    height: 70px;
+    width: 70px;
+    background: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .profile-row .prof-imgBox img {
+    height: 100%;
+    width: 100%;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .profile-row .text-content {
+    height: -moz-max-content;
+    height: max-content;
+    padding: 0px;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .profile-row .text-content span {
+    font-size: 13px;
+    font-family: pop-l;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .profile-row .text-content h6 {
+    font-family: pop-m;
+    font-size: 20px;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .card-contentWrap {
+    gap: 1rem;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .img-box {
+    width: 250px;
+    height: 250px;
+    background-image: url(./assets/img/chicken-larb-plate-with-dried-chilies-tomatoes-spring-onions-lettuce\ \(1\).jpg);
+    background-size: contain;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .img_1 {
+    background-image: url(./assets/img/top-close-up-view-chicken-chicken-wings-potatoes-onion-herbs-vegetables-sauce-fork-knife.jpg);
+    background-size: contain;
+    -o-object-fit: fill;
+       object-fit: fill;
+    background-repeat: no-repeat;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .img_2 {
+    background-image: url(./assets/img/tom-yum-snakehead-fish-hot-pot-thai-food.jpg);
+    background-size: contain;
+    -o-object-fit: fill;
+       object-fit: fill;
+    background-repeat: no-repeat;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    gap: 10px;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs h4 {
+    font-size: 22px;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs p {
+    width: 95%;
+    font-size: 13px;
+    font-family: pop-l;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs .btn-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs .btn-row .btn-pears {
+    font-size: 27px;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs .btn-row .rec-add .recAdd-btn {
+    border: 1px solid #2c2c2c;
+    color: #2c2c2c;
+    background: white;
+    transition: all 0.2s ease-out;
+    width: 100%;
+    padding: 2px 5px;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs .btn-row .rec-add .recAdd-btn a {
+    text-decoration: none;
+    font-size: 12px;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs .view-recipe {
+    padding: 3px 5px;
+    border: 1px solid #2c2c2c;
+    color: #2c2c2c;
+    background: white;
+    transition: all 0.2s ease-out;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs .view-recipe a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #2c2c2c;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs .view-recipe:hover {
+    background: #2c2c2c;
+    border: none;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs .view-recipe:hover a {
+    color: white;
+  }
+}
+@media screen and (max-width: 1024.98px) {
+  .webWrap {
+    width: 1024.98px;
+    height: -moz-max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* main recipe view section */
+    /* recipe share dashboard section */
+  }
+  .webWrap header {
+    width: 100%;
+    height: 50% !important;
+  }
+  .webWrap header nav {
+    width: 100%;
+  }
+  .webWrap header nav .my_container .serch_box .icon_box .icon_box .login_iconBox .togle-bar {
+    display: none;
+  }
+  .webWrap header .my-hero {
+    width: 100%;
+    height: 2% 0vh;
+    display: flex;
+    justify-content: center;
+  }
+  .webWrap header .my-hero .hero-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .webWrap header .my-hero .hero-container .img_wrap {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.192), rgba(0, 0, 0, 0.692)), url(./assets/img/chicken-larb-plate-with-dried-chilies-tomatoes-spring-onions-lettuce.jpg);
+  }
+  .webWrap .foods-recipes {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+  }
+  .webWrap .foods-recipes .food-container {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap {
+    width: 100% !important;
+    flex-wrap: wrap;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card {
+    display: flex;
+    gap: 1rem;
+    height: -moz-max-content;
+    height: max-content;
+    padding: 1%;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .profile-row {
+    gap: 1rem;
+    align-items: center;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .profile-row .right-timeBox span {
+    font-size: 16px;
+    font-family: pop-l;
+    padding: 4px;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .profile-row .left-imgSide {
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .profile-row .prof-imgBox {
+    height: 70px;
+    width: 70px;
+    background: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .profile-row .prof-imgBox img {
+    height: 100%;
+    width: 100%;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .profile-row .text-content {
+    height: -moz-max-content;
+    height: max-content;
+    padding: 0px;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .profile-row .text-content span {
+    font-size: 13px;
+    font-family: pop-l;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .profile-row .text-content h6 {
+    font-family: pop-m;
+    font-size: 20px;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .card-contentWrap {
+    gap: 1rem;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .img-box {
+    width: 250px;
+    height: 250px;
+    background-image: url(./assets/img/chicken-larb-plate-with-dried-chilies-tomatoes-spring-onions-lettuce\ \(1\).jpg);
+    background-size: contain;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .img_1 {
+    background-image: url(./assets/img/top-close-up-view-chicken-chicken-wings-potatoes-onion-herbs-vegetables-sauce-fork-knife.jpg);
+    background-size: contain;
+    -o-object-fit: fill;
+       object-fit: fill;
+    background-repeat: no-repeat;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .img_2 {
+    background-image: url(./assets/img/tom-yum-snakehead-fish-hot-pot-thai-food.jpg);
+    background-size: contain;
+    -o-object-fit: fill;
+       object-fit: fill;
+    background-repeat: no-repeat;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    gap: 10px;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs h4 {
+    font-size: 22px;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs p {
+    width: 95%;
+    font-size: 13px;
+    font-family: pop-l;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs .btn-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs .btn-row .btn-pears {
+    font-size: 27px;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs .btn-row .rec-add .recAdd-btn {
+    border: 1px solid #2c2c2c;
+    color: #2c2c2c;
+    background: white;
+    transition: all 0.2s ease-out;
+    width: 100%;
+    padding: 2px 5px;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs .btn-row .rec-add .recAdd-btn a {
+    text-decoration: none;
+    font-size: 12px;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs .view-recipe {
+    padding: 3px 5px;
+    border: 1px solid #2c2c2c;
+    color: #2c2c2c;
+    background: white;
+    transition: all 0.2s ease-out;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs .view-recipe a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #2c2c2c;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs .view-recipe:hover {
+    background: #2c2c2c;
+    border: none;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs .view-recipe:hover a {
+    color: white;
+  }
+  .webWrap .main-recipeSect {
+    width: 98%;
+  }
+  .webWrap .main-recipeSect .inner-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content .img-box {
+    height: 100%;
+    width: 100%;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content .img-box img {
+    width: 100%;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content .texts {
+    width: 90%;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content .texts p {
+    font-size: 21px;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content .ing-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content .ing-box .title {
+    width: 100%;
+    padding: 10px 0px;
+    width: 100%;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content .ing-box .title h5 {
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content .ing-box .list-box ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 18px;
+    font-family: pop-l;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content .ing-box .list-box ul li {
+    list-style-type: decimal;
+    list-style-position: outside;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content .ing-box .list-box ul li span {
+    color: #2c2c2c;
+    font-size: 18px;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec {
+    gap: 0px;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .left-bar {
+    width: 100%;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .left-bar .left-content {
+    width: 100%;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .left-bar .left-content .inner-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .left-bar .left-content .inner-row .nave-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 3rem;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .left-bar .left-content .inner-row .nave-list li {
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .left-bar .left-content .inner-row .nave-list li .save-box {
+    display: none;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768.98px) {
+  .webWrap {
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    /* main recipe view section */
+    /* recipe share dashboard section */
+    /* login and signup sect */
+  }
+  .webWrap header {
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .webWrap header nav {
+    width: 100%;
+    overflow: visible;
+  }
+  .webWrap header nav .my_container {
+    width: 95%;
+    overflow: visible;
+  }
+  .webWrap header nav .my_container .links {
+    display: none;
+  }
+  .webWrap header nav .my_container .serch_box .icon_box .login_iconBox .logOut {
+    display: flex;
+  }
+  .webWrap header nav .my_container .serch_box .icon_box .login_iconBox .lbl-login {
+    display: flex;
+  }
+  .webWrap header nav .my_container .serch_box .icon_box .login_iconBox .btn-bars {
+    display: flex !important;
+  }
+  .webWrap header .my-hero {
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+  }
+  .webWrap header .my-hero .hero-container {
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
+    overflow: hidden;
+  }
+  .webWrap header .my-hero .hero-container .img_wrap {
+    width: 769px !important;
+    height: 200px;
+    background-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.192), rgba(0, 0, 0, 0.692)), url(./assets/img/chicken-larb-plate-with-dried-chilies-tomatoes-spring-onions-lettuce.jpg);
+  }
+  .webWrap .foods-recipes {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .webWrap .foods-recipes .food-container {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap {
+    width: 100% !important;
+    flex-wrap: wrap;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card {
+    display: flex;
+    gap: 1rem;
+    height: -moz-max-content;
+    height: max-content;
+    padding: 1%;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .profile-row {
+    gap: 1rem;
+    align-items: center;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .profile-row .right-timeBox span {
+    font-size: 16px;
+    font-family: pop-l;
+    padding: 4px;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .profile-row .left-imgSide {
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .profile-row .prof-imgBox {
+    height: 70px;
+    width: 70px;
+    background: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .profile-row .prof-imgBox img {
+    height: 100%;
+    width: 100%;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .profile-row .text-content {
+    height: -moz-max-content;
+    height: max-content;
+    padding: 0px;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .profile-row .text-content span {
+    font-size: 13px;
+    font-family: pop-l;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .profile-row .text-content h6 {
+    font-family: pop-m;
+    font-size: 20px;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .card-contentWrap {
+    gap: 1rem;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .img-box {
+    width: 250px;
+    height: 250px;
+    background-image: url(./assets/img/chicken-larb-plate-with-dried-chilies-tomatoes-spring-onions-lettuce\ \(1\).jpg);
+    background-size: contain;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .img_1 {
+    background-image: url(./assets/img/top-close-up-view-chicken-chicken-wings-potatoes-onion-herbs-vegetables-sauce-fork-knife.jpg);
+    background-size: contain;
+    -o-object-fit: fill;
+       object-fit: fill;
+    background-repeat: no-repeat;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .img_2 {
+    background-image: url(./assets/img/tom-yum-snakehead-fish-hot-pot-thai-food.jpg);
+    background-size: contain;
+    -o-object-fit: fill;
+       object-fit: fill;
+    background-repeat: no-repeat;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    gap: 10px;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs h4 {
+    font-size: 22px;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs p {
+    width: 95%;
+    font-size: 13px;
+    font-family: pop-l;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs .btn-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs .btn-row .btn-pears {
+    font-size: 27px;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs .btn-row .rec-add .recAdd-btn {
+    border: 1px solid #2c2c2c;
+    color: #2c2c2c;
+    background: white;
+    transition: all 0.2s ease-out;
+    width: 100%;
+    padding: 2px 5px;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs .btn-row .rec-add .recAdd-btn a {
+    text-decoration: none;
+    font-size: 12px;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs .view-recipe {
+    padding: 3px 5px;
+    border: 1px solid #2c2c2c;
+    color: #2c2c2c;
+    background: white;
+    transition: all 0.2s ease-out;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs .view-recipe a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #2c2c2c;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs .view-recipe:hover {
+    background: #2c2c2c;
+    border: none;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs .view-recipe:hover a {
+    color: white;
+  }
+  .webWrap .main-recipeSect {
+    width: 98%;
+  }
+  .webWrap .main-recipeSect .inner-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content .img-box {
+    height: 100%;
+    width: 100%;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content .img-box img {
+    width: 100%;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content .texts {
+    width: 90%;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content .texts p {
+    font-size: 21px;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content .ing-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content .ing-box .title {
+    width: 100%;
+    padding: 10px 0px;
+    width: 100%;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content .ing-box .title h5 {
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content .ing-box .list-box ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 18px;
+    font-family: pop-l;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content .ing-box .list-box ul li {
+    list-style-type: decimal;
+    list-style-position: outside;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content .ing-box .list-box ul li span {
+    color: #2c2c2c;
+    font-size: 18px;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec {
+    width: 100%;
+    gap: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .left-bar {
+    width: 100%;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .left-bar .left-content {
+    width: 100%;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .left-bar .left-content .inner-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .left-bar .left-content .inner-row .nave-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 3rem;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .left-bar .left-content .inner-row .nave-list li {
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .left-bar .left-content .inner-row .nave-list li .save-box {
+    display: none;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box {
+    border: none;
+    width: 100%;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content, .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .inner-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .text-box, .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .inner-row .text-box {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .text-box .recipe-title, .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .text-box .discrip-box, .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .inner-row .text-box .recipe-title, .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .inner-row .text-box .discrip-box {
+    width: 100%;
+  }
+  .webWrap .login-page-sec {
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
+    text-align: center;
+    align-items: center;
+    display: flex;
+  }
+  .webWrap .login-page-sec::hover {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  }
+  .webWrap .login-page-sec .wrapper {
+    display: flex;
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
+    padding: 1% 0px 1% 0px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  .webWrap .login-page-sec .wrapper header {
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
+    z-index: 1;
+  }
+  .webWrap .login-page-sec .wrapper header nav {
+    width: 100%;
+    overflow: visible;
+  }
+  .webWrap .login-page-sec .wrapper header nav .my_container {
+    width: 95%;
+    overflow: visible;
+  }
+  .webWrap .login-page-sec .wrapper header nav .my_container .links {
+    display: none;
+  }
+  .webWrap .login-page-sec .wrapper header nav .my_container .serch_box .icon_box .login_iconBox .logOut {
+    display: flex;
+  }
+  .webWrap .login-page-sec .wrapper header nav .my_container .serch_box .icon_box .login_iconBox .lbl-login {
+    display: flex;
+  }
+  .webWrap .login-page-sec .wrapper header nav .my_container .serch_box .icon_box .login_iconBox .btn-bars {
+    display: flex !important;
+  }
+  .webWrap .login-page-sec .wrapper header nav .my_container .serch_box .icon_box .login_iconBox .togle-bar {
+    display: flex !important;
+  }
+  .webWrap .login-page-sec .wrapper header .my-hero {
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+  }
+  .webWrap .login-page-sec .wrapper header .my-hero .hero-container {
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
+    overflow: hidden;
+  }
+  .webWrap .login-page-sec .wrapper header .my-hero .hero-container .img_wrap {
+    width: 769px !important;
+    height: 200px;
+    background-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.192), rgba(0, 0, 0, 0.692)), url(./assets/img/chicken-larb-plate-with-dried-chilies-tomatoes-spring-onions-lettuce.jpg);
+  }
+  .webWrap .login-page-sec .wrapper form {
+    z-index: -2;
+    position: relative;
+    padding: 1%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 500px;
+    min-width: 380PX;
+    height: -moz-max-content;
+    height: max-content;
+    flex-wrap: wrap;
+    background: #ffffff;
+    align-content: center;
+    border-radius: 10px;
+    gap: 5px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    transition: all 0.3s ease-in;
+  }
+  .webWrap .login-page-sec .wrapper form .title-row {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+  }
+  .webWrap .login-page-sec .wrapper form .title-row .closs-btn {
+    border: none;
+    padding: 0px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .webWrap .login-page-sec .wrapper form .title-row .closs-btn img {
+    height: 100%;
+    width: 100%;
+  }
+  .webWrap .login-page-sec .wrapper form .inpt-pwd {
+    display: block;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    text-align: center;
+  }
+  .webWrap .login-page-sec .wrapper form .inpt-pwd .pswrd-icon {
+    color: #444;
+    position: relative;
+    font-size: 12px;
+    top: -43px;
+    right: -43%;
+    z-index: 1;
+  }
+  .webWrap .login-page-sec .wrapper form .inp {
+    position: relative;
+    margin: 10px 0px;
+    position: relative;
+    width: 100%;
+    padding: 10px 0px 10px 10px;
+    border-radius: 5px;
+    border: 1px solid #b0b3b6;
+    font-weight: 500;
+    color: black;
+    transition: all 0.1s ease-in;
+    outline: none;
+  }
+  .webWrap .login-page-sec .wrapper form .inp:hover {
+    cursor: pointer;
+    border: 1px solid #037ce6;
+  }
+  .webWrap .login-page-sec .wrapper form .inp:focus-within {
+    border: 2px solid #0160b2;
+    color: black;
+  }
+  .webWrap .login-page-sec .wrapper form .frgt {
+    color: #037ce6;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .webWrap .login-page-sec .wrapper form .Login-btn {
+    background: #0171d3;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    height: 40px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in;
+  }
+  .webWrap .login-page-sec .wrapper form .Login-btn a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 0px;
+    font-size: 14px;
+  }
+  .webWrap .login-page-sec .wrapper form .Login-btn:hover {
+    box-shadow: #037ce6 0px 4px 10px;
+  }
+  .webWrap .login-page-sec .wrapper form .lgn-fb {
+    margin-top: 20px;
+    text-decoration: none;
+    width: 100%;
+    background: #0160b2;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    height: 40px;
+    transition: all 0.2s ease-in;
+    position: relative;
+  }
+  .webWrap .login-page-sec .wrapper form .lgn-fb:hover {
+    box-shadow: #0160b2 0px 4px 10px;
+  }
+  .webWrap .login-page-sec .wrapper form .lgn-fb a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 0px;
+    font-size: 14px;
+  }
+  .webWrap .login-page-sec .wrapper form .lgn-fb .fa-facebook {
+    color: white;
+    font-size: 19px;
+    position: absolute;
+    top: 12px;
+    left: 10px;
+  }
+  .webWrap .login-page-sec .wrapper form .lgn-gle {
+    text-decoration: none;
+    justify-content: center;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    height: 40px;
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    background: #444;
+    transition: all 0.2s ease-in;
+    position: relative;
+  }
+  .webWrap .login-page-sec .wrapper form .lgn-gle:hover {
+    box-shadow: #444 0px 4px 10px;
+  }
+  .webWrap .login-page-sec .wrapper form .lgn-gle .fa-google {
+    color: #b0b3b6;
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    font-size: 18px;
+  }
+  .webWrap .login-page-sec .wrapper form .lgn-gle a {
+    text-decoration: none;
+    color: #b0b3b6;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .webWrap .login-page-sec .wrapper form .Signup-txt {
+    margin-top: 13px;
+    font-size: 13px;
+    font-weight: 500;
+    color: black;
+  }
+  .webWrap .login-page-sec .wrapper form .Signup-txt a {
+    text-decoration: none;
+    color: #037ce6;
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  .webWrap .login-page-sec .wrapper form .under-line {
+    position: relative;
+    text-align: center;
+    font-size: 13px;
+    overflow: hidden;
+    margin-top: 15px;
+    width: 300px;
+    color: #b0b3b6;
+  }
+  .webWrap .login-page-sec .wrapper form .under-line::before {
+    content: "";
+    display: block;
+    width: 130px;
+    height: 0.9px;
+    position: absolute;
+    top: 45%;
+    background: #b0b3b6;
+  }
+  .webWrap .login-page-sec .wrapper form .under-line::after {
+    content: "";
+    display: block;
+    width: 130px;
+    height: 0.9px;
+    position: absolute;
+    top: 45%;
+    right: 0px;
+    background: #b0b3b6;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .webWrap {
+    width: 575.98px;
+    height: -moz-max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    /* main recipe view section */
+    /* recipe share dashboard section */
+    /* login and signup sect */
+  }
+  .webWrap header {
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .webWrap header nav {
+    width: 100%;
+    overflow: visible;
+  }
+  .webWrap header nav .my_container {
+    width: 95%;
+    overflow: visible;
+  }
+  .webWrap header nav .my_container .serch_box .icon_box .login_iconBox .logOut {
+    display: none !important;
+  }
+  .webWrap header nav .my_container .serch_box .icon_box .login_iconBox .lbl-login {
+    display: none;
+  }
+  .webWrap header nav .my_container .serch_box .icon_box .login_iconBox .btn-bars {
+    display: flex !important;
+  }
+  .webWrap header .my-hero {
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+  }
+  .webWrap header .my-hero .hero-container {
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
+    overflow: hidden;
+  }
+  .webWrap header .my-hero .hero-container .img_wrap {
+    width: 769px !important;
+    height: 200px;
+    background-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.192), rgba(0, 0, 0, 0.692)), url(./assets/img/chicken-larb-plate-with-dried-chilies-tomatoes-spring-onions-lettuce.jpg);
+  }
+  .webWrap .food-container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .webWrap .food-container .mycard-Wrap {
+    width: 90% !important;
+    flex-wrap: wrap !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .webWrap .food-container .mycard-Wrap .card {
+    width: 450px;
+    height: -moz-max-content;
+    height: max-content;
+    display: flex;
+    gap: 1rem;
+    height: max-content;
+    padding: 1%;
+    flex-wrap: wrap !important;
+    align-items: center;
+    flex-direction: column;
+  }
+  .webWrap .food-container .mycard-Wrap .card .profile-row {
+    width: 100%;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between !important;
+  }
+  .webWrap .food-container .mycard-Wrap .card .profile-row .right-timeBox span {
+    font-size: 16px;
+    font-family: pop-l;
+    padding: 4px;
+  }
+  .webWrap .food-container .mycard-Wrap .card .profile-row .left-imgSide {
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+  }
+  .webWrap .food-container .mycard-Wrap .card .profile-row .prof-imgBox {
+    height: 70px;
+    width: 70px;
+    background: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .webWrap .food-container .mycard-Wrap .card .profile-row .prof-imgBox img {
+    height: 100%;
+    width: 100%;
+  }
+  .webWrap .food-container .mycard-Wrap .card .profile-row .text-content {
+    height: -moz-max-content;
+    height: max-content;
+    padding: 0px;
+  }
+  .webWrap .food-container .mycard-Wrap .card .profile-row .text-content span {
+    font-size: 13px;
+    font-family: pop-l;
+  }
+  .webWrap .food-container .mycard-Wrap .card .profile-row .text-content h6 {
+    font-family: pop-m;
+    font-size: 20px;
+  }
+  .webWrap .food-container .mycard-Wrap .card .card-contentWrap {
+    gap: 1rem;
+    flex-wrap: wrap;
+    width: 98%;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .webWrap .food-container .mycard-Wrap .card .img-box {
+    width: 500px !important;
+    height: 500px !important;
+    background-image: url(./assets/img/chicken-larb-plate-with-dried-chilies-tomatoes-spring-onions-lettuce\ \(1\).jpg);
+    background-size: contain;
+  }
+  .webWrap .food-container .mycard-Wrap .card .img_1 {
+    background-image: url(./assets/img/top-close-up-view-chicken-chicken-wings-potatoes-onion-herbs-vegetables-sauce-fork-knife.jpg);
+    background-size: contain;
+    -o-object-fit: fill;
+       object-fit: fill;
+    background-repeat: no-repeat;
+  }
+  .webWrap .food-container .mycard-Wrap .card .img_2 {
+    background-image: url(./assets/img/tom-yum-snakehead-fish-hot-pot-thai-food.jpg);
+    background-size: contain;
+    -o-object-fit: fill;
+       object-fit: fill;
+    background-repeat: no-repeat;
+  }
+  .webWrap .food-container .mycard-Wrap .card .texs {
+    width: 450px !important;
+    height: 450px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    gap: 10px;
+  }
+  .webWrap .food-container .mycard-Wrap .card .texs h4 {
+    font-size: 32px !important;
+  }
+  .webWrap .food-container .mycard-Wrap .card .texs p {
+    width: 95%;
+    font-size: 26px !important;
+    font-family: pop-l;
+  }
+  .webWrap .food-container .mycard-Wrap .card .texs .btn-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+  }
+  .webWrap .food-container .mycard-Wrap .card .texs .view-recipe {
+    padding: 3px 5px;
+    border: 1px solid #2c2c2c;
+    color: #2c2c2c;
+    background: white;
+    transition: all 0.2s ease-out;
+  }
+  .webWrap .food-container .mycard-Wrap .card .texs .view-recipe a {
+    text-decoration: none;
+    font-size: 20px !important;
+    color: #2c2c2c;
+  }
+  .webWrap .food-container .mycard-Wrap .card .texs .view-recipe:hover {
+    background: #2c2c2c;
+    border: none;
+  }
+  .webWrap .food-container .mycard-Wrap .card .texs .view-recipe:hover a {
+    color: white;
+  }
+  .webWrap .main-recipeSect {
+    width: 98%;
+  }
+  .webWrap .main-recipeSect .inner-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content .img-box {
+    height: 100%;
+    width: 100%;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content .img-box img {
+    width: 100%;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content .texts {
+    width: 90%;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content .texts p {
+    font-size: 13px;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content .ing-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content .ing-box .title {
+    width: 100%;
+    padding: 10px 0px;
+    width: 100%;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content .ing-box .title h5 {
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content .ing-box .list-box ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 13px;
+    font-family: pop-l;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content .ing-box .list-box ul li {
+    list-style-type: decimal;
+    list-style-position: outside;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content .ing-box .list-box ul li span {
+    color: #2c2c2c;
+    font-size: 13px;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec {
+    width: 100%;
+    gap: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .left-bar {
+    width: 100%;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .left-bar .left-content {
+    width: 100%;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .left-bar .left-content .inner-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .left-bar .left-content .inner-row .nave-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 3rem;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .left-bar .left-content .inner-row .nave-list li {
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .left-bar .left-content .inner-row .nave-list li .save-box {
+    display: none;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box {
+    width: 100%;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .centre-Wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .centre-Wrap .inner-row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .centre-Wrap .inner-row .text-box {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .centre-Wrap .inner-row .text-box .recipe-title {
+    width: 100%;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .centre-Wrap .inner-row .text-box .discrip-box {
+    width: 100%;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .centre-Wrap .ingred-row {
+    width: 100%;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap {
+    width: 100%;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap {
+    width: 100%;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card {
+    width: 520px;
+    height: -moz-max-content;
+    height: max-content;
+    display: flex;
+    gap: 1rem;
+    height: max-content;
+    padding: 1%;
+    flex-wrap: wrap !important;
+    align-items: center;
+    flex-direction: column;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .profile-row {
+    width: 100%;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between !important;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .profile-row .right-timeBox span {
+    font-size: 16px;
+    font-family: pop-l;
+    padding: 4px;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .profile-row .left-imgSide {
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .profile-row .prof-imgBox {
+    height: 70px;
+    width: 70px;
+    background: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .profile-row .prof-imgBox img {
+    height: 100%;
+    width: 100%;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .profile-row .text-content {
+    height: -moz-max-content;
+    height: max-content;
+    padding: 0px;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .profile-row .text-content span {
+    font-size: 13px;
+    font-family: pop-l;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .profile-row .text-content h6 {
+    font-family: pop-m;
+    font-size: 20px;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .card-contentWrap {
+    gap: 1rem;
+    flex-wrap: wrap;
+    width: 98%;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .img-box {
+    width: 500px !important;
+    height: 500px !important;
+    background-image: url(./assets/img/chicken-larb-plate-with-dried-chilies-tomatoes-spring-onions-lettuce\ \(1\).jpg);
+    background-size: contain;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .texs {
+    width: 450px !important;
+    height: 450px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    gap: 10px;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .texs h4 {
+    font-size: 32px !important;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .texs p {
+    width: 95%;
+    font-size: 26px !important;
+    font-family: pop-l;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .texs .btn-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .texs .view-recipe {
+    padding: 3px 5px;
+    border: 1px solid #2c2c2c;
+    color: #2c2c2c;
+    background: white;
+    transition: all 0.2s ease-out;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .texs .view-recipe a {
+    text-decoration: none;
+    font-size: 20px !important;
+    color: #2c2c2c;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .texs .view-recipe:hover {
+    background: #2c2c2c;
+    border: none;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .texs .view-recipe:hover a {
+    color: white;
+  }
+  .webWrap .login-page-sec {
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
+    text-align: center;
+    align-items: center;
+    display: flex;
+  }
+  .webWrap .login-page-sec::hover {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  }
+  .webWrap .login-page-sec .wrapper {
+    display: flex;
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
+    padding: 1% 0px 1% 0px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  .webWrap .login-page-sec .wrapper header {
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
+    z-index: 1;
+  }
+  .webWrap .login-page-sec .wrapper header nav {
+    width: 100%;
+    overflow: visible;
+  }
+  .webWrap .login-page-sec .wrapper header nav .my_container {
+    width: 95%;
+    overflow: visible;
+  }
+  .webWrap .login-page-sec .wrapper header nav .my_container .links {
+    display: none;
+  }
+  .webWrap .login-page-sec .wrapper header nav .my_container .serch_box .icon_box .login_iconBox .logOut {
+    display: flex;
+  }
+  .webWrap .login-page-sec .wrapper header nav .my_container .serch_box .icon_box .login_iconBox .lbl-login {
+    display: flex;
+  }
+  .webWrap .login-page-sec .wrapper header nav .my_container .serch_box .icon_box .login_iconBox .btn-bars {
+    display: flex !important;
+  }
+  .webWrap .login-page-sec .wrapper header nav .my_container .serch_box .icon_box .login_iconBox .togle-bar {
+    display: flex !important;
+  }
+  .webWrap .login-page-sec .wrapper header .my-hero {
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+  }
+  .webWrap .login-page-sec .wrapper header .my-hero .hero-container {
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
+    overflow: hidden;
+  }
+  .webWrap .login-page-sec .wrapper header .my-hero .hero-container .img_wrap {
+    width: 769px !important;
+    height: 200px;
+    background-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.192), rgba(0, 0, 0, 0.692)), url(./assets/img/chicken-larb-plate-with-dried-chilies-tomatoes-spring-onions-lettuce.jpg);
+  }
+  .webWrap .login-page-sec .wrapper form {
+    z-index: -2;
+    position: relative;
+    padding: 1%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 500px;
+    min-width: 380PX;
+    height: -moz-max-content;
+    height: max-content;
+    flex-wrap: wrap;
+    background: #ffffff;
+    align-content: center;
+    border-radius: 10px;
+    gap: 5px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    transition: all 0.3s ease-in;
+  }
+  .webWrap .login-page-sec .wrapper form .title-row {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+  }
+  .webWrap .login-page-sec .wrapper form .title-row .closs-btn {
+    border: none;
+    padding: 0px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .webWrap .login-page-sec .wrapper form .title-row .closs-btn img {
+    height: 100%;
+    width: 100%;
+  }
+  .webWrap .login-page-sec .wrapper form .inpt-pwd {
+    display: block;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    text-align: center;
+  }
+  .webWrap .login-page-sec .wrapper form .inpt-pwd .pswrd-icon {
+    color: #444;
+    position: relative;
+    font-size: 12px;
+    top: -43px;
+    right: -43%;
+    z-index: 1;
+  }
+  .webWrap .login-page-sec .wrapper form .inp {
+    position: relative;
+    margin: 10px 0px;
+    position: relative;
+    width: 100%;
+    padding: 10px 0px 10px 10px;
+    border-radius: 5px;
+    border: 1px solid #b0b3b6;
+    font-weight: 500;
+    color: black;
+    transition: all 0.1s ease-in;
+    outline: none;
+  }
+  .webWrap .login-page-sec .wrapper form .inp:hover {
+    cursor: pointer;
+    border: 1px solid #037ce6;
+  }
+  .webWrap .login-page-sec .wrapper form .inp:focus-within {
+    border: 2px solid #0160b2;
+    color: black;
+  }
+  .webWrap .login-page-sec .wrapper form .frgt {
+    color: #037ce6;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .webWrap .login-page-sec .wrapper form .Login-btn {
+    background: #0171d3;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    height: 40px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in;
+  }
+  .webWrap .login-page-sec .wrapper form .Login-btn a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 0px;
+    font-size: 14px;
+  }
+  .webWrap .login-page-sec .wrapper form .Login-btn:hover {
+    box-shadow: #037ce6 0px 4px 10px;
+  }
+  .webWrap .login-page-sec .wrapper form .lgn-fb {
+    margin-top: 20px;
+    text-decoration: none;
+    width: 100%;
+    background: #0160b2;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    height: 40px;
+    transition: all 0.2s ease-in;
+    position: relative;
+  }
+  .webWrap .login-page-sec .wrapper form .lgn-fb:hover {
+    box-shadow: #0160b2 0px 4px 10px;
+  }
+  .webWrap .login-page-sec .wrapper form .lgn-fb a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 0px;
+    font-size: 14px;
+  }
+  .webWrap .login-page-sec .wrapper form .lgn-fb .fa-facebook {
+    color: white;
+    font-size: 19px;
+    position: absolute;
+    top: 12px;
+    left: 10px;
+  }
+  .webWrap .login-page-sec .wrapper form .lgn-gle {
+    text-decoration: none;
+    justify-content: center;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    height: 40px;
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    background: #444;
+    transition: all 0.2s ease-in;
+    position: relative;
+  }
+  .webWrap .login-page-sec .wrapper form .lgn-gle:hover {
+    box-shadow: #444 0px 4px 10px;
+  }
+  .webWrap .login-page-sec .wrapper form .lgn-gle .fa-google {
+    color: #b0b3b6;
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    font-size: 18px;
+  }
+  .webWrap .login-page-sec .wrapper form .lgn-gle a {
+    text-decoration: none;
+    color: #b0b3b6;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .webWrap .login-page-sec .wrapper form .Signup-txt {
+    margin-top: 13px;
+    font-size: 13px;
+    font-weight: 500;
+    color: black;
+  }
+  .webWrap .login-page-sec .wrapper form .Signup-txt a {
+    text-decoration: none;
+    color: #037ce6;
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  .webWrap .login-page-sec .wrapper form .under-line {
+    position: relative;
+    text-align: center;
+    font-size: 13px;
+    overflow: hidden;
+    margin-top: 15px;
+    width: 300px;
+    color: #b0b3b6;
+  }
+  .webWrap .login-page-sec .wrapper form .under-line::before {
+    content: "";
+    display: block;
+    width: 130px;
+    height: 0.9px;
+    position: absolute;
+    top: 45%;
+    background: #b0b3b6;
+  }
+  .webWrap .login-page-sec .wrapper form .under-line::after {
+    content: "";
+    display: block;
+    width: 130px;
+    height: 0.9px;
+    position: absolute;
+    top: 45%;
+    right: 0px;
+    background: #b0b3b6;
+  }
+}
+@media screen and (max-width: 425.98px) {
+  .webWrap {
+    width: 425.98px;
+    height: -moz-max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    /* main recipe view section */
+    /* recipe share dashboard section */
+    /* login and signup sect */
+  }
+  .webWrap header nav {
+    width: 100%;
+    overflow: visible;
+  }
+  .webWrap header nav .my_container {
+    width: 95%;
+    overflow: visible;
+  }
+  .webWrap header nav .my_container .serch_box .icon_box .login_iconBox .logOut {
+    display: none !important;
+  }
+  .webWrap header nav .my_container .serch_box .icon_box .login_iconBox .lbl-login {
+    display: none;
+  }
+  .webWrap header nav .my_container .serch_box .icon_box .login_iconBox .btn-bars {
+    display: flex !important;
+  }
+  .webWrap header .my-hero {
+    width: 100%;
+    height: 250px !important;
+    display: flex;
+    justify-content: center;
+  }
+  .webWrap header .my-hero .hero-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  .webWrap header .my-hero .hero-container .img_wrap {
+    width: 769px !important;
+    height: 250px;
+    background-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.192), rgba(0, 0, 0, 0.692)), url(./assets/img/chicken-larb-plate-with-dried-chilies-tomatoes-spring-onions-lettuce.jpg);
+  }
+  .webWrap .foods-recipes {
+    width: 100%;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .webWrap .foods-recipes .food-container {
+    width: 100%;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap {
+    width: 90% !important;
+    flex-wrap: wrap !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card {
+    width: 450px;
+    height: -moz-max-content !important;
+    height: max-content !important;
+    display: flex;
+    gap: 1rem;
+    height: max-content;
+    padding: 1%;
+    flex-wrap: wrap !important;
+    align-items: center;
+    flex-direction: column;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .profile-row {
+    width: 100%;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between !important;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .profile-row .right-timeBox span {
+    font-size: 14px;
+    font-family: pop-l;
+    padding: 4px;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .profile-row .left-imgSide {
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .profile-row .prof-imgBox {
+    height: 40px;
+    width: 40px;
+    background: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .profile-row .prof-imgBox img {
+    height: 100%;
+    width: 100%;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .profile-row .text-content {
+    height: -moz-max-content;
+    height: max-content;
+    padding: 0px;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .profile-row .text-content span {
+    font-size: 13px;
+    font-family: pop-l;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .profile-row .text-content h6 {
+    font-family: pop-m;
+    font-size: 16px;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .card-contentWrap {
+    gap: 3rem;
+    flex-wrap: wrap;
+    width: 100%;
+    height: -moz-max-content !important;
+    height: max-content !important;
+    display: flex !important;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .img-box {
+    width: 400px !important;
+    height: 400px !important;
+    background-image: url(./assets/img/chicken-larb-plate-with-dried-chilies-tomatoes-spring-onions-lettuce\ \(1\).jpg);
+    background-size: contain;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .img_1 {
+    background-image: url(./assets/img/top-close-up-view-chicken-chicken-wings-potatoes-onion-herbs-vegetables-sauce-fork-knife.jpg);
+    background-size: contain;
+    -o-object-fit: fill;
+       object-fit: fill;
+    background-repeat: no-repeat;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .img_2 {
+    background-image: url(./assets/img/tom-yum-snakehead-fish-hot-pot-thai-food.jpg);
+    background-size: contain;
+    -o-object-fit: fill;
+       object-fit: fill;
+    background-repeat: no-repeat;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs {
+    width: -moz-max-content !important;
+    width: max-content !important;
+    height: -moz-max-content !important;
+    height: max-content !important;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    gap: 0px;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs h4 {
+    font-size: 35px !important;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs p {
+    width: 95%;
+    font-size: 18px !important;
+    font-family: pop-l;
+    flex-basis: content;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs .btn-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs .view-recipe {
+    padding: 3px 5px;
+    border: 1px solid #2c2c2c;
+    color: #2c2c2c;
+    background: white;
+    transition: all 0.2s ease-out;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs .view-recipe a {
+    text-decoration: none;
+    font-size: 20px !important;
+    color: #2c2c2c;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs .view-recipe:hover {
+    background: #2c2c2c;
+    border: none;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs .view-recipe:hover a {
+    color: white;
+  }
+  .webWrap .main-recipeSect {
+    width: 98%;
+  }
+  .webWrap .main-recipeSect .inner-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content .img-box {
+    height: 100%;
+    width: 100%;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content .img-box img {
+    width: 100%;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content .texts {
+    width: 90%;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content .texts p {
+    font-size: 12px;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content .ing-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content .ing-box .title {
+    width: 100%;
+    padding: 10px 0px;
+    width: 100%;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content .ing-box .title h5 {
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content .ing-box .list-box ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 13px;
+    font-family: pop-l;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content .ing-box .list-box ul li {
+    list-style-type: decimal;
+    list-style-position: outside;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content .ing-box .list-box ul li span {
+    color: #2c2c2c;
+    font-size: 13px;
+  }
+  .webWrap .dash-board {
+    /* save recipe page */
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec {
+    width: 100%;
+    gap: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .left-bar {
+    width: 100%;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .left-bar .left-content {
+    width: 100%;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .left-bar .left-content .inner-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .left-bar .left-content .inner-row .nave-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 3rem;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .left-bar .left-content .inner-row .nave-list li {
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .left-bar .left-content .inner-row .nave-list li .save-box {
+    display: none;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box {
+    width: 100%;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .centre-Wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .centre-Wrap .inner-row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .centre-Wrap .inner-row .text-box {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .centre-Wrap .inner-row .text-box .recipe-title {
+    width: 100%;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .centre-Wrap .inner-row .text-box .discrip-box {
+    width: 100%;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .centre-Wrap .ingred-row {
+    width: 100%;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap {
+    width: 100%;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap {
+    width: 100%;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card {
+    width: 450px;
+    height: -moz-max-content !important;
+    height: max-content !important;
+    display: flex;
+    gap: 1rem;
+    height: max-content;
+    padding: 1%;
+    flex-wrap: wrap !important;
+    align-items: center;
+    flex-direction: column;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .profile-row {
+    width: 100%;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between !important;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .profile-row .right-timeBox span {
+    font-size: 14px;
+    font-family: pop-l;
+    padding: 4px;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .profile-row .left-imgSide {
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .profile-row .prof-imgBox {
+    height: 40px;
+    width: 40px;
+    background: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .profile-row .prof-imgBox img {
+    height: 100%;
+    width: 100%;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .profile-row .text-content {
+    height: -moz-max-content;
+    height: max-content;
+    padding: 0px;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .profile-row .text-content span {
+    font-size: 13px;
+    font-family: pop-l;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .profile-row .text-content h6 {
+    font-family: pop-m;
+    font-size: 16px;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .card-contentWrap {
+    gap: 3rem;
+    flex-wrap: wrap;
+    width: 100%;
+    height: -moz-max-content !important;
+    height: max-content !important;
+    display: flex !important;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .img-box {
+    width: 400px !important;
+    height: 400px !important;
+    background-image: url(./assets/img/chicken-larb-plate-with-dried-chilies-tomatoes-spring-onions-lettuce\ \(1\).jpg);
+    background-size: contain;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .img_1 {
+    background-image: url(./assets/img/top-close-up-view-chicken-chicken-wings-potatoes-onion-herbs-vegetables-sauce-fork-knife.jpg);
+    background-size: contain;
+    -o-object-fit: fill;
+       object-fit: fill;
+    background-repeat: no-repeat;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .img_2 {
+    background-image: url(./assets/img/tom-yum-snakehead-fish-hot-pot-thai-food.jpg);
+    background-size: contain;
+    -o-object-fit: fill;
+       object-fit: fill;
+    background-repeat: no-repeat;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .texs {
+    width: -moz-max-content !important;
+    width: max-content !important;
+    height: -moz-max-content !important;
+    height: max-content !important;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    gap: 0px;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .texs h4 {
+    font-size: 35px !important;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .texs p {
+    width: 95%;
+    font-size: 18px !important;
+    font-family: pop-l;
+    flex-basis: content;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .texs .btn-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .texs .view-recipe {
+    padding: 3px 5px;
+    border: 1px solid #2c2c2c;
+    color: #2c2c2c;
+    background: white;
+    transition: all 0.2s ease-out;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .texs .view-recipe a {
+    text-decoration: none;
+    font-size: 20px !important;
+    color: #2c2c2c;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .texs .view-recipe:hover {
+    background: #2c2c2c;
+    border: none;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .texs .view-recipe:hover a {
+    color: white;
+  }
+  .webWrap .login-page-sec {
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
+    text-align: center;
+    align-items: center;
+    display: flex;
+  }
+  .webWrap .login-page-sec::hover {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  }
+  .webWrap .login-page-sec .wrapper {
+    display: flex;
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
+    padding: 1% 0px 1% 0px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  .webWrap .login-page-sec .wrapper header {
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
+    z-index: 1;
+  }
+  .webWrap .login-page-sec .wrapper header nav {
+    width: 100%;
+    overflow: visible;
+  }
+  .webWrap .login-page-sec .wrapper header nav .my_container {
+    width: 95%;
+    overflow: visible;
+  }
+  .webWrap .login-page-sec .wrapper header nav .my_container .links {
+    display: none;
+  }
+  .webWrap .login-page-sec .wrapper header nav .my_container .serch_box .icon_box .login_iconBox .logOut {
+    display: flex;
+  }
+  .webWrap .login-page-sec .wrapper header nav .my_container .serch_box .icon_box .login_iconBox .lbl-login {
+    display: flex;
+  }
+  .webWrap .login-page-sec .wrapper header nav .my_container .serch_box .icon_box .login_iconBox .btn-bars {
+    display: flex !important;
+  }
+  .webWrap .login-page-sec .wrapper header nav .my_container .serch_box .icon_box .login_iconBox .togle-bar {
+    display: flex !important;
+  }
+  .webWrap .login-page-sec .wrapper header .my-hero {
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+  }
+  .webWrap .login-page-sec .wrapper header .my-hero .hero-container {
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
+    overflow: hidden;
+  }
+  .webWrap .login-page-sec .wrapper header .my-hero .hero-container .img_wrap {
+    width: 769px !important;
+    height: 200px;
+    background-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.192), rgba(0, 0, 0, 0.692)), url(./assets/img/chicken-larb-plate-with-dried-chilies-tomatoes-spring-onions-lettuce.jpg);
+  }
+  .webWrap .login-page-sec .wrapper form {
+    z-index: -2;
+    position: relative;
+    padding: 1%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 400px;
+    min-width: 380PX;
+    height: -moz-max-content;
+    height: max-content;
+    flex-wrap: wrap;
+    background: #ffffff;
+    align-content: center;
+    border-radius: 10px;
+    gap: 5px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    transition: all 0.3s ease-in;
+  }
+  .webWrap .login-page-sec .wrapper form .title-row {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+  }
+  .webWrap .login-page-sec .wrapper form .title-row .closs-btn {
+    border: none;
+    padding: 0px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .webWrap .login-page-sec .wrapper form .title-row .closs-btn img {
+    height: 100%;
+    width: 100%;
+  }
+  .webWrap .login-page-sec .wrapper form .inpt-pwd {
+    display: block;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    text-align: center;
+  }
+  .webWrap .login-page-sec .wrapper form .inpt-pwd .pswrd-icon {
+    color: #444;
+    position: relative;
+    font-size: 12px;
+    top: -43px;
+    right: -43%;
+    z-index: 1;
+  }
+  .webWrap .login-page-sec .wrapper form .inp {
+    position: relative;
+    margin: 10px 0px;
+    position: relative;
+    width: 100%;
+    padding: 10px 0px 10px 10px;
+    border-radius: 5px;
+    border: 1px solid #b0b3b6;
+    font-weight: 500;
+    color: black;
+    transition: all 0.1s ease-in;
+    outline: none;
+  }
+  .webWrap .login-page-sec .wrapper form .inp:hover {
+    cursor: pointer;
+    border: 1px solid #037ce6;
+  }
+  .webWrap .login-page-sec .wrapper form .inp:focus-within {
+    border: 2px solid #0160b2;
+    color: black;
+  }
+  .webWrap .login-page-sec .wrapper form .frgt {
+    color: #037ce6;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .webWrap .login-page-sec .wrapper form .Login-btn {
+    background: #0171d3;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    height: 40px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in;
+  }
+  .webWrap .login-page-sec .wrapper form .Login-btn a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 0px;
+    font-size: 14px;
+  }
+  .webWrap .login-page-sec .wrapper form .Login-btn:hover {
+    box-shadow: #037ce6 0px 4px 10px;
+  }
+  .webWrap .login-page-sec .wrapper form .lgn-fb {
+    margin-top: 20px;
+    text-decoration: none;
+    width: 100%;
+    background: #0160b2;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    height: 40px;
+    transition: all 0.2s ease-in;
+    position: relative;
+  }
+  .webWrap .login-page-sec .wrapper form .lgn-fb:hover {
+    box-shadow: #0160b2 0px 4px 10px;
+  }
+  .webWrap .login-page-sec .wrapper form .lgn-fb a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 0px;
+    font-size: 14px;
+  }
+  .webWrap .login-page-sec .wrapper form .lgn-fb .fa-facebook {
+    color: white;
+    font-size: 19px;
+    position: absolute;
+    top: 12px;
+    left: 10px;
+  }
+  .webWrap .login-page-sec .wrapper form .lgn-gle {
+    text-decoration: none;
+    justify-content: center;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    height: 40px;
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    background: #444;
+    transition: all 0.2s ease-in;
+    position: relative;
+  }
+  .webWrap .login-page-sec .wrapper form .lgn-gle:hover {
+    box-shadow: #444 0px 4px 10px;
+  }
+  .webWrap .login-page-sec .wrapper form .lgn-gle .fa-google {
+    color: #b0b3b6;
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    font-size: 18px;
+  }
+  .webWrap .login-page-sec .wrapper form .lgn-gle a {
+    text-decoration: none;
+    color: #b0b3b6;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .webWrap .login-page-sec .wrapper form .Signup-txt {
+    margin-top: 13px;
+    font-size: 13px;
+    font-weight: 500;
+    color: black;
+  }
+  .webWrap .login-page-sec .wrapper form .Signup-txt a {
+    text-decoration: none;
+    color: #037ce6;
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  .webWrap .login-page-sec .wrapper form .under-line {
+    position: relative;
+    text-align: center;
+    font-size: 13px;
+    overflow: hidden;
+    margin-top: 15px;
+    width: 300px;
+    color: #b0b3b6;
+  }
+  .webWrap .login-page-sec .wrapper form .under-line::before {
+    content: "";
+    display: block;
+    width: 130px;
+    height: 0.9px;
+    position: absolute;
+    top: 45%;
+    background: #b0b3b6;
+  }
+  .webWrap .login-page-sec .wrapper form .under-line::after {
+    content: "";
+    display: block;
+    width: 130px;
+    height: 0.9px;
+    position: absolute;
+    top: 45%;
+    right: 0px;
+    background: #b0b3b6;
+  }
+}
+@media screen and (max-width: 374.99px) {
+  .webWrap {
+    width: 374.99px;
+    height: -moz-max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    /* main recipe view section */
+    /* recipe share dashboard section */
+    /* login and signup sect */
+  }
+  .webWrap .my-hero {
+    width: 100% !important;
+    height: 250px !important;
+    display: flex;
+    justify-content: center;
+  }
+  .webWrap .my-hero .hero-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  .webWrap .my-hero .hero-container .img_wrap {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.192), rgba(0, 0, 0, 0.692)), url(./assets/img/chicken-larb-plate-with-dried-chilies-tomatoes-spring-onions-lettuce.jpg);
+  }
+  .webWrap .foods-recipes {
+    width: 100%;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .webWrap .foods-recipes .food-container {
+    width: 100%;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap {
+    width: 97% !important;
+    flex-wrap: wrap !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card {
+    width: 370px;
+    height: -moz-max-content !important;
+    height: max-content !important;
+    display: flex;
+    gap: 1rem;
+    height: max-content;
+    padding: 1%;
+    flex-wrap: wrap !important;
+    align-items: center;
+    flex-direction: column;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .profile-row {
+    width: 100%;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between !important;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .profile-row .right-timeBox span {
+    font-size: 13px;
+    font-family: pop-l;
+    padding: 4px;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .profile-row .left-imgSide {
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .profile-row .prof-imgBox {
+    height: 40px;
+    width: 40px;
+    background: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .profile-row .prof-imgBox img {
+    height: 100%;
+    width: 100%;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .profile-row .text-content {
+    height: -moz-max-content;
+    height: max-content;
+    padding: 0px;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .profile-row .text-content span {
+    font-size: 13px;
+    font-family: pop-l;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .profile-row .text-content h6 {
+    font-family: pop-m;
+    font-size: 16px;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .card-contentWrap {
+    gap: 3rem;
+    flex-wrap: wrap;
+    width: 100%;
+    height: -moz-max-content !important;
+    height: max-content !important;
+    display: flex !important;
+    justify-content: center;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .img-box {
+    width: 350px !important;
+    height: 350px !important;
+    background-image: url(./assets/img/chicken-larb-plate-with-dried-chilies-tomatoes-spring-onions-lettuce\ \(1\).jpg);
+    background-size: contain;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .img_1 {
+    background-image: url(./assets/img/top-close-up-view-chicken-chicken-wings-potatoes-onion-herbs-vegetables-sauce-fork-knife.jpg);
+    background-size: contain;
+    -o-object-fit: fill;
+       object-fit: fill;
+    background-repeat: no-repeat;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .img_2 {
+    background-image: url(./assets/img/tom-yum-snakehead-fish-hot-pot-thai-food.jpg);
+    background-size: contain;
+    -o-object-fit: fill;
+       object-fit: fill;
+    background-repeat: no-repeat;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs {
+    width: -moz-max-content !important;
+    width: max-content !important;
+    height: -moz-max-content !important;
+    height: max-content !important;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    gap: 0px;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs h4 {
+    font-size: 35px !important;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs p {
+    width: 95%;
+    font-size: 18px !important;
+    font-family: pop-l;
+    flex-basis: content;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs .btn-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs .view-recipe {
+    padding: 3px 5px;
+    border: 1px solid #2c2c2c;
+    color: #2c2c2c;
+    background: white;
+    transition: all 0.2s ease-out;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs .view-recipe a {
+    text-decoration: none;
+    font-size: 20px !important;
+    color: #2c2c2c;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs .view-recipe:hover {
+    background: #2c2c2c;
+    border: none;
+  }
+  .webWrap .foods-recipes .food-container .mycard-Wrap .card .texs .view-recipe:hover a {
+    color: white;
+  }
+  .webWrap .main-recipeSect {
+    width: 98%;
+  }
+  .webWrap .main-recipeSect .inner-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content .img-box {
+    height: 100%;
+    width: 100%;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content .img-box img {
+    width: 100%;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content .texts {
+    width: 90%;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content .texts p {
+    font-size: 10px;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content .ing-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content .ing-box .title {
+    width: 100%;
+    padding: 10px 0px;
+    width: 100%;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content .ing-box .title h5 {
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content .ing-box .list-box ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 12px;
+    font-family: pop-l;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content .ing-box .list-box ul li {
+    list-style-type: decimal;
+    list-style-position: outside;
+  }
+  .webWrap .main-recipeSect .inner-container .inner-content .ing-box .list-box ul li span {
+    color: #2c2c2c;
+    font-size: 12px;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec {
+    width: 100%;
+    gap: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .left-bar {
+    width: 100%;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .left-bar .left-content {
+    width: 100%;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .left-bar .left-content .inner-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .left-bar .left-content .inner-row .nave-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 3rem;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .left-bar .left-content .inner-row .nave-list li {
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .left-bar .left-content .inner-row .nave-list li .save-box {
+    display: none;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box {
+    width: 100%;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .centre-Wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .centre-Wrap .inner-row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .centre-Wrap .inner-row .text-box {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .centre-Wrap .inner-row .text-box .recipe-title {
+    width: 100%;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .centre-Wrap .inner-row .text-box .discrip-box {
+    width: 100%;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .centre-Wrap .ingred-row {
+    width: 100%;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap {
+    width: 100%;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap {
+    width: 100%;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card {
+    width: 370px;
+    height: -moz-max-content !important;
+    height: max-content !important;
+    display: flex;
+    gap: 1rem;
+    height: max-content;
+    padding: 1%;
+    flex-wrap: wrap !important;
+    align-items: center;
+    flex-direction: column;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .profile-row {
+    width: 100%;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between !important;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .profile-row .right-timeBox span {
+    font-size: 13px;
+    font-family: pop-l;
+    padding: 4px;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .profile-row .left-imgSide {
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .profile-row .prof-imgBox {
+    height: 40px;
+    width: 40px;
+    background: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .profile-row .prof-imgBox img {
+    height: 100%;
+    width: 100%;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .profile-row .text-content {
+    height: -moz-max-content;
+    height: max-content;
+    padding: 0px;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .profile-row .text-content span {
+    font-size: 13px;
+    font-family: pop-l;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .profile-row .text-content h6 {
+    font-family: pop-m;
+    font-size: 16px;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .card-contentWrap {
+    gap: 3rem;
+    flex-wrap: wrap;
+    width: 100%;
+    height: -moz-max-content !important;
+    height: max-content !important;
+    display: flex !important;
+    justify-content: center;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .img-box {
+    width: 350px !important;
+    height: 350px !important;
+    background-image: url(./assets/img/chicken-larb-plate-with-dried-chilies-tomatoes-spring-onions-lettuce\ \(1\).jpg);
+    background-size: contain;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .img_1 {
+    background-image: url(./assets/img/top-close-up-view-chicken-chicken-wings-potatoes-onion-herbs-vegetables-sauce-fork-knife.jpg);
+    background-size: contain;
+    -o-object-fit: fill;
+       object-fit: fill;
+    background-repeat: no-repeat;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .img_2 {
+    background-image: url(./assets/img/tom-yum-snakehead-fish-hot-pot-thai-food.jpg);
+    background-size: contain;
+    -o-object-fit: fill;
+       object-fit: fill;
+    background-repeat: no-repeat;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .texs {
+    width: -moz-max-content !important;
+    width: max-content !important;
+    height: -moz-max-content !important;
+    height: max-content !important;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    gap: 0px;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .texs h4 {
+    font-size: 35px !important;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .texs p {
+    width: 95%;
+    font-size: 18px !important;
+    font-family: pop-l;
+    flex-basis: content;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .texs .btn-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .texs .view-recipe {
+    padding: 3px 5px;
+    border: 1px solid #2c2c2c;
+    color: #2c2c2c;
+    background: white;
+    transition: all 0.2s ease-out;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .texs .view-recipe a {
+    text-decoration: none;
+    font-size: 20px !important;
+    color: #2c2c2c;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .texs .view-recipe:hover {
+    background: #2c2c2c;
+    border: none;
+  }
+  .webWrap .dash-board .dash-contentWrap .hero-sec .center-box .content .inner-container .row-contentWrap .mycard-Wrap .card .texs .view-recipe:hover a {
+    color: white;
+  }
+  .webWrap .login-page-sec {
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
+    text-align: center;
+    align-items: center;
+    display: flex;
+  }
+  .webWrap .login-page-sec::hover {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  }
+  .webWrap .login-page-sec .wrapper {
+    display: flex;
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
+    padding: 1% 0px 1% 0px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  .webWrap .login-page-sec .wrapper header {
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
+    z-index: 1;
+  }
+  .webWrap .login-page-sec .wrapper header nav {
+    width: 100%;
+    overflow: visible;
+  }
+  .webWrap .login-page-sec .wrapper header nav .my_container {
+    width: 95%;
+    overflow: visible;
+  }
+  .webWrap .login-page-sec .wrapper header nav .my_container .links {
+    display: none;
+  }
+  .webWrap .login-page-sec .wrapper header nav .my_container .serch_box .icon_box .login_iconBox .logOut {
+    display: flex;
+  }
+  .webWrap .login-page-sec .wrapper header nav .my_container .serch_box .icon_box .login_iconBox .lbl-login {
+    display: flex;
+  }
+  .webWrap .login-page-sec .wrapper header nav .my_container .serch_box .icon_box .login_iconBox .btn-bars {
+    display: flex !important;
+  }
+  .webWrap .login-page-sec .wrapper header nav .my_container .serch_box .icon_box .login_iconBox .togle-bar {
+    display: flex !important;
+  }
+  .webWrap .login-page-sec .wrapper header .my-hero {
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+  }
+  .webWrap .login-page-sec .wrapper header .my-hero .hero-container {
+    width: 100%;
+    height: -moz-max-content;
+    height: max-content;
+    overflow: hidden;
+  }
+  .webWrap .login-page-sec .wrapper header .my-hero .hero-container .img_wrap {
+    width: 769px !important;
+    height: 200px;
+    background-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.192), rgba(0, 0, 0, 0.692)), url(./assets/img/chicken-larb-plate-with-dried-chilies-tomatoes-spring-onions-lettuce.jpg);
+  }
+  .webWrap .login-page-sec .wrapper form {
+    z-index: -2;
+    position: relative;
+    padding: 1%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 340px;
+    min-width: 340PX;
+    height: -moz-max-content;
+    height: max-content;
+    flex-wrap: wrap;
+    background: #ffffff;
+    align-content: center;
+    border-radius: 10px;
+    gap: 5px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    transition: all 0.3s ease-in;
+  }
+  .webWrap .login-page-sec .wrapper form .title-row {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+  }
+  .webWrap .login-page-sec .wrapper form .title-row .closs-btn {
+    border: none;
+    padding: 0px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .webWrap .login-page-sec .wrapper form .title-row .closs-btn img {
+    height: 100%;
+    width: 100%;
+  }
+  .webWrap .login-page-sec .wrapper form .inpt-pwd {
+    display: block;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    text-align: center;
+  }
+  .webWrap .login-page-sec .wrapper form .inpt-pwd .pswrd-icon {
+    color: #444;
+    position: relative;
+    font-size: 12px;
+    top: -43px;
+    right: -43%;
+    z-index: 1;
+  }
+  .webWrap .login-page-sec .wrapper form .inp {
+    position: relative;
+    margin: 10px 0px;
+    position: relative;
+    width: 100%;
+    padding: 10px 0px 10px 10px;
+    border-radius: 5px;
+    border: 1px solid #b0b3b6;
+    font-weight: 500;
+    color: black;
+    transition: all 0.1s ease-in;
+    outline: none;
+  }
+  .webWrap .login-page-sec .wrapper form .inp:hover {
+    cursor: pointer;
+    border: 1px solid #037ce6;
+  }
+  .webWrap .login-page-sec .wrapper form .inp:focus-within {
+    border: 2px solid #0160b2;
+    color: black;
+  }
+  .webWrap .login-page-sec .wrapper form .frgt {
+    color: #037ce6;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .webWrap .login-page-sec .wrapper form .Login-btn {
+    background: #0171d3;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    height: 40px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in;
+  }
+  .webWrap .login-page-sec .wrapper form .Login-btn a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 0px;
+    font-size: 14px;
+  }
+  .webWrap .login-page-sec .wrapper form .Login-btn:hover {
+    box-shadow: #037ce6 0px 4px 10px;
+  }
+  .webWrap .login-page-sec .wrapper form .lgn-fb {
+    margin-top: 20px;
+    text-decoration: none;
+    width: 100%;
+    background: #0160b2;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    height: 40px;
+    transition: all 0.2s ease-in;
+    position: relative;
+  }
+  .webWrap .login-page-sec .wrapper form .lgn-fb:hover {
+    box-shadow: #0160b2 0px 4px 10px;
+  }
+  .webWrap .login-page-sec .wrapper form .lgn-fb a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 0px;
+    font-size: 14px;
+  }
+  .webWrap .login-page-sec .wrapper form .lgn-fb .fa-facebook {
+    color: white;
+    font-size: 19px;
+    position: absolute;
+    top: 12px;
+    left: 10px;
+  }
+  .webWrap .login-page-sec .wrapper form .lgn-gle {
+    text-decoration: none;
+    justify-content: center;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    height: 40px;
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    background: #444;
+    transition: all 0.2s ease-in;
+    position: relative;
+  }
+  .webWrap .login-page-sec .wrapper form .lgn-gle:hover {
+    box-shadow: #444 0px 4px 10px;
+  }
+  .webWrap .login-page-sec .wrapper form .lgn-gle .fa-google {
+    color: #b0b3b6;
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    font-size: 18px;
+  }
+  .webWrap .login-page-sec .wrapper form .lgn-gle a {
+    text-decoration: none;
+    color: #b0b3b6;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .webWrap .login-page-sec .wrapper form .Signup-txt {
+    margin-top: 13px;
+    font-size: 13px;
+    font-weight: 500;
+    color: black;
+  }
+  .webWrap .login-page-sec .wrapper form .Signup-txt a {
+    text-decoration: none;
+    color: #037ce6;
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  .webWrap .login-page-sec .wrapper form .under-line {
+    position: relative;
+    text-align: center;
+    font-size: 13px;
+    overflow: hidden;
+    margin-top: 15px;
+    width: 300px;
+    color: #b0b3b6;
+  }
+  .webWrap .login-page-sec .wrapper form .under-line::before {
+    content: "";
+    display: block;
+    width: 130px;
+    height: 0.9px;
+    position: absolute;
+    top: 45%;
+    background: #b0b3b6;
+  }
+  .webWrap .login-page-sec .wrapper form .under-line::after {
+    content: "";
+    display: block;
+    width: 130px;
+    height: 0.9px;
+    position: absolute;
+    top: 45%;
+    right: 0px;
+    background: #b0b3b6;
+  }
+}/*# sourceMappingURL=style.css.map */
